@@ -1,0 +1,58 @@
+{
+   "swagger":"2.0",
+   "info":{
+      "version":"0",
+      "title":"MessageApp"
+   },
+   "basePath":"/",
+   "paths":{
+      "/":{
+         "get":{
+            "tags":[
+               "hello world"
+            ],
+            "summary":"Base app",
+            "description":"Multiple status values can be provided with comma separated strings",
+            "produces":[
+               "application/json"
+            ],
+            "parameters":[],
+            "responses":{
+               "200":{
+                  "description":"successful operation",
+                  "schema":{
+                     "type":"object"
+                  }
+               },
+               "400":{
+                  "description":"Invalid status value"
+               }
+            }
+         }
+      },
+      "/messages":{
+         "get":{
+            "tags":[
+               "hello world"
+            ],
+            "summary":"Finds messages",
+            "description":"Multiple status values can be provided with comma separated strings",
+            "produces":[
+               "application/json"
+            ],
+            "parameters":[],
+            "responses":{
+               "200":{
+                  "description":"successful operation",
+                  "schema":{
+                     "type":"object"
+                  }
+               },
+               "400":{
+                  "description":"Invalid status value"
+               }
+            }
+         }
+      }
+   }
+}
